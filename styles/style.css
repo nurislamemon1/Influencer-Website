@@ -231,7 +231,44 @@ nav>ul {
   border: none;
   margin-top: 20px;
 }
-
+/* footer section */
+.footer-container{
+background:  rgb(10, 8, 38);
+color: white;
+max-width: 1400px;
+margin-top: 40px;
+}
+.footer-content{
+  max-width: 300px;
+height: 150px;
+margin: 5px auto;
+}
+.footer-content h4{
+  color: rgb(255, 255, 255);
+font-family: Poppins;
+font-size: 1.2rem;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: 0px;
+text-align: center;
+}
+.footer-content p{
+  color: rgb(217, 219, 225);
+font-size: 0.8rem;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+opacity: 0.7;
+}
+.fa-ul{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-left: 10px;
+}
 /* responsive website */
 @media screen and (max-width: 576px) {
 
