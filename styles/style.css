@@ -103,8 +103,85 @@ nav>ul {
   width: 100%;
 }
 
+.image-content {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
 
+}
 
+.image-content img {
+  width: 100px;
+  height: 50px;
+}
+
+/* main section */
+.main {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.popular-section-title {
+  color: rgb(58, 58, 58);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 70px;
+  letter-spacing: 0px;
+  text-align: center;
+  width: 300px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.card-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  gap: 20px;
+}
+
+.card-content {
+  max-width: 329px;
+  height: 410px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+.card-content img {
+  width: 100%;
+}
+
+.card-content h4 {
+  color: rgb(24, 25, 31);
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.card-content h5 {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.card-content p {
+  color: rgb(120, 120, 133);
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 143%;
+  letter-spacing: 1.8%;
+  text-align: left;
+}
 
 /* responsive website */
 @media screen and (max-width: 576px) {
@@ -113,29 +190,51 @@ nav>ul {
   .header-section {
     flex-direction: column;
   }
+
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .popular-section-title {}
+
+  .image-content {
+    flex-wrap: wrap;
+  }
+
   .nav-links {
     text-align: center;
   }
-  .section-title{
+
+  .section-title {
     text-align: center;
   }
-  .banner-title{
+
+  .banner-title {
     font-size: 2rem;
   }
-  .btn-primary{
+
+  .btn-primary {
     padding: 20px 60px;
   }
-  .banner-section{
+
+  .banner-section {
     flex-direction: column-reverse;
   }
-  .banner-content{
+
+  .banner-content {
     text-align: center;
   }
-   .banner-image img{
+
+  .banner-image img {
     width: 100%;
     padding: 0;
-   }
-   .banner-image{
+  }
+
+  .banner-image {
     border-radius: 50%;
-   }
+  }
+
+  .image-content {
+    flex-wrap: wrap;
+  }
 }
